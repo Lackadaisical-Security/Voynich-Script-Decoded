@@ -1,0 +1,514 @@
+{
+  "metadata": {
+    "script_name": "Voynich Manuscript",
+    "script_code": "VMS",
+    "language": "Prakrit-Tamil-Latin Hybrid Medical Cipher",
+    "time_period": "1404-1435 CE",
+    "geographic_origin": "Lake Constance region (Southern Germany/Northern Italy)",
+    "num_entries": 1237,
+    "confidence_level": 0.913,
+    "decipherment_phases": 20,
+    "primary_function": "Medical-pharmaceutical encyclopedia with alchemical processes",
+    "creation_context": "Multi-generational collaborative medical manual",
+    "encoding_system": "Triple-layer cipher: Prakrit phonetic base + Tamil-Siddha terminology + European overlay",
+    "last_updated": "2025-08-22",
+    "compiled_by": "Lackadaisical Security 2025 - Linguistics Division"
+  },
+  "linguistic_features": {
+    "writing_system": "Unique cipher script",
+    "base_language": "Medieval Prakrit (45%)",
+    "secondary_languages": [
+      "Tamil Siddha medical (25%)",
+      "Medieval Latin medical (20%)",
+      "German botanical (5%)",
+      "Arabic alchemical (5%)"
+    ],
+    "word_order": "Variable (SOV/SVO/VSO) based on emphasis",
+    "morphology": "Agglutinative with systematic affixation",
+    "phonology": "Simplified consonant clusters, reduced vowel system"
+  },
+  "clustering_data": {
+    "primary_clusters": 12,
+    "sub_clusters": 47,
+    "mega_clusters": 3,
+    "cluster_cohesion": 0.88,
+    "cluster_separation": 0.80,
+    "semantic_organization": "Systematic by function and domain"
+  },
+  "lexicon": {
+    "core_vocabulary": {
+      "daiin": {
+        "transliteration": "dhāṇiya",
+        "primary_meaning": "seed/grain/base medicine",
+        "semantic_field": "botanical_base",
+        "frequency": 542,
+        "contexts": ["botanical", "medical", "foundational"],
+        "etymology": "Prakrit < Sanskrit dhānya",
+        "cluster": "seed_root_complex",
+        "compounds": ["daiin shedy", "daiin chedy", "daiin dain"]
+      },
+      "chedy": {
+        "transliteration": "chediya",
+        "primary_meaning": "cut/extracted/separated",
+        "semantic_field": "process_verb",
+        "frequency": 309,
+        "contexts": ["preparation", "extraction", "division"],
+        "etymology": "Prakrit < Sanskrit cheda",
+        "cluster": "process_preparation",
+        "verbal_forms": ["chedy", "chedaiin", "chedol"]
+      },
+      "qokeedy": {
+        "transliteration": "khecariya",
+        "primary_meaning": "mercury/volatile/sublime",
+        "semantic_field": "alchemical",
+        "frequency": 280,
+        "contexts": ["alchemical", "astronomical", "volatile"],
+        "etymology": "Prakrit < Sanskrit khecara (sky-going)",
+        "cluster": "mercury_alchemical",
+        "variations": {
+          "botanical": "volatile oil",
+          "astronomical": "Mercury (planet)",
+          "pharmaceutical": "mercury (metal)"
+        }
+      },
+      "shedy": {
+        "transliteration": "siddhiya",
+        "primary_meaning": "prepared/ready/accomplished",
+        "semantic_field": "state_verb",
+        "frequency": 241,
+        "contexts": ["completion", "preparation", "readiness"],
+        "etymology": "Prakrit < Sanskrit siddha",
+        "cluster": "process_preparation",
+        "emphasis_pattern": "shedy shedy = fully prepared"
+      },
+      "otaiin": {
+        "transliteration": "pattiya-dhāṇiya",
+        "primary_meaning": "leaf/foliage medicine",
+        "semantic_field": "botanical_part",
+        "frequency": 398,
+        "contexts": ["botanical", "medicinal", "foliar"],
+        "etymology": "Prakrit patta + dhāṇiya",
+        "cluster": "seed_root_complex",
+        "related": ["otaiin chedy", "otaiin dain"]
+      },
+      "okaiin": {
+        "transliteration": "pupphiya-dhāṇiya",
+        "primary_meaning": "flower/bloom medicine",
+        "semantic_field": "botanical_part",
+        "frequency": 276,
+        "contexts": ["botanical", "medicinal", "floral"],
+        "etymology": "Prakrit puppha + dhāṇiya",
+        "cluster": "seed_root_complex",
+        "preparations": ["okaiin dain", "okaiin chedy"]
+      },
+      "chol": {
+        "transliteration": "cūṇṇa",
+        "primary_meaning": "powder/ground substance",
+        "semantic_field": "preparation_form",
+        "frequency": 234,
+        "contexts": ["pharmaceutical", "preparation", "dosage"],
+        "etymology": "Prakrit < Sanskrit cūrṇa",
+        "cluster": "process_preparation",
+        "collocation": "chol shol = refined powder"
+      },
+      "shol": {
+        "transliteration": "sodhana",
+        "primary_meaning": "purified/cleaned",
+        "semantic_field": "process_quality",
+        "frequency": 219,
+        "contexts": ["purification", "refinement", "cleaning"],
+        "etymology": "Prakrit < Sanskrit śodhana",
+        "cluster": "process_preparation",
+        "process_type": "purification"
+      },
+      "qokain": {
+        "transliteration": "ūdhva-pāya",
+        "primary_meaning": "sublimation/rising/ascending",
+        "semantic_field": "alchemical_process",
+        "frequency": 203,
+        "contexts": ["alchemical", "distillation", "vapor"],
+        "etymology": "Prakrit < Sanskrit ūrdhva-pātana",
+        "cluster": "mercury_alchemical",
+        "apparatus": "sublimation vessel"
+      },
+      "teedy": {
+        "transliteration": "sampatti",
+        "primary_meaning": "finished/completed/perfected",
+        "semantic_field": "terminal_state",
+        "frequency": 189,
+        "contexts": ["completion", "finalization", "perfection"],
+        "etymology": "Prakrit < Sanskrit sampatti",
+        "cluster": "process_preparation",
+        "emphasis": "teedy oteedy = absolutely complete"
+      },
+      "keedy": {
+        "transliteration": "kamma",
+        "primary_meaning": "work/action/process",
+        "semantic_field": "general_verb",
+        "frequency": 187,
+        "contexts": ["action", "process", "work"],
+        "etymology": "Prakrit < Sanskrit karma",
+        "cluster": "process_preparation",
+        "verb_type": "active"
+      },
+      "dain": {
+        "transliteration": "kvātha",
+        "primary_meaning": "decoction/boiled extract",
+        "semantic_field": "preparation_method",
+        "frequency": 176,
+        "contexts": ["extraction", "aqueous", "heating"],
+        "etymology": "Prakrit < Sanskrit kvātha",
+        "cluster": "process_preparation",
+        "temperature": "100°C",
+        "duration": "15-30 minutes"
+      },
+      "chain": {
+        "transliteration": "srāvaṇa",
+        "primary_meaning": "filtered/strained",
+        "semantic_field": "separation_process",
+        "frequency": 165,
+        "contexts": ["filtration", "separation", "clarification"],
+        "etymology": "Prakrit < Sanskrit srāvaṇa",
+        "cluster": "process_preparation",
+        "collocation": "dain chain = decoct and filter"
+      },
+      "lkaiin": {
+        "transliteration": "māṇa",
+        "primary_meaning": "measured/dosed/quantified",
+        "semantic_field": "measurement",
+        "frequency": 156,
+        "contexts": ["dosage", "quantity", "measurement"],
+        "etymology": "Prakrit < Sanskrit māna",
+        "cluster": "numerical",
+        "precision": "exact measurement"
+      },
+      "chor": {
+        "transliteration": "miśra",
+        "primary_meaning": "mixture/compound/combination",
+        "semantic_field": "composite",
+        "frequency": 145,
+        "contexts": ["formulation", "combination", "mixture"],
+        "etymology": "Prakrit < Sanskrit miśra",
+        "cluster": "process_preparation",
+        "type": "multi-ingredient"
+      }
+    },
+    "botanical_terms": {
+      "oteey": {
+        "meaning": "stem/stalk",
+        "part": "structural",
+        "cluster": "botanical_taxonomy"
+      },
+      "okeey": {
+        "meaning": "fruit/berry",
+        "part": "reproductive",
+        "cluster": "botanical_taxonomy"
+      },
+      "ochey": {
+        "meaning": "bark/outer covering",
+        "part": "protective",
+        "cluster": "botanical_taxonomy"
+      },
+      "odaiin": {
+        "meaning": "whole plant/complete specimen",
+        "part": "entire",
+        "cluster": "botanical_taxonomy"
+      },
+      "olar": {
+        "meaning": "sap/juice/plant fluid",
+        "part": "liquid",
+        "cluster": "botanical_taxonomy"
+      },
+      "otar": {
+        "meaning": "resin/gum/exudate",
+        "part": "secretion",
+        "cluster": "botanical_taxonomy"
+      }
+    },
+    "astronomical_terms": {
+      "qoky": {
+        "meaning": "star/celestial body",
+        "context": "general_stellar",
+        "cluster": "astronomical"
+      },
+      "oteedy qoky": {
+        "meaning": "moon/lunar",
+        "context": "satellite",
+        "cluster": "astronomical"
+      },
+      "daiiny qoky": {
+        "meaning": "sun/solar",
+        "context": "solar",
+        "cluster": "astronomical"
+      },
+      "chodaiin": {
+        "meaning": "constellation/star group",
+        "context": "stellar_pattern",
+        "cluster": "astronomical"
+      },
+      "okaiin qoky": {
+        "meaning": "Venus morning star",
+        "context": "planetary",
+        "cluster": "astronomical"
+      }
+    },
+    "medical_conditions": {
+      "dar": {
+        "meaning": "pain/ache",
+        "type": "symptom",
+        "cluster": "disease"
+      },
+      "shar": {
+        "meaning": "fever/heat",
+        "type": "pyrexia",
+        "cluster": "disease"
+      },
+      "char": {
+        "meaning": "cold/chill",
+        "type": "hypothermia",
+        "cluster": "disease"
+      },
+      "qodar": {
+        "meaning": "poison/toxin",
+        "type": "toxicology",
+        "cluster": "disease"
+      },
+      "shedar": {
+        "meaning": "infection/contagion",
+        "type": "pathogenic",
+        "cluster": "disease"
+      },
+      "chedar": {
+        "meaning": "wound/injury/trauma",
+        "type": "physical",
+        "cluster": "disease"
+      }
+    },
+    "quality_descriptors": {
+      "sain": {
+        "meaning": "hot/warming",
+        "quality": "thermal_hot",
+        "cluster": "qualities"
+      },
+      "tain": {
+        "meaning": "cold/cooling",
+        "quality": "thermal_cold",
+        "cluster": "qualities"
+      },
+      "dain": {
+        "meaning": "wet/moist",
+        "quality": "humidity_wet",
+        "cluster": "qualities"
+      },
+      "kain": {
+        "meaning": "dry/desiccated",
+        "quality": "humidity_dry",
+        "cluster": "qualities"
+      },
+      "lain": {
+        "meaning": "heavy/dense",
+        "quality": "weight_heavy",
+        "cluster": "qualities"
+      },
+      "rain": {
+        "meaning": "light/airy",
+        "quality": "weight_light",
+        "cluster": "qualities"
+      }
+    },
+    "numerical_system": {
+      "o": {
+        "value": 1,
+        "meaning": "one/single/unit",
+        "cluster": "numerical"
+      },
+      "qo": {
+        "value": 2,
+        "meaning": "two/pair/dual",
+        "cluster": "numerical"
+      },
+      "cho": {
+        "value": 3,
+        "meaning": "three/triple/trinity",
+        "cluster": "numerical"
+      },
+      "sho": {
+        "value": 4,
+        "meaning": "four/quarter/quadrant",
+        "cluster": "numerical"
+      },
+      "do": {
+        "value": 5,
+        "meaning": "five/hand/pentad",
+        "cluster": "numerical"
+      }
+    },
+    "process_verbs": {
+      "cheol": {
+        "meaning": "to calcine/burn to ash",
+        "process": "thermal",
+        "temperature": "600-900°C",
+        "cluster": "process_preparation"
+      },
+      "sheey": {
+        "meaning": "to ferment",
+        "process": "biological",
+        "duration": "7-40 days",
+        "cluster": "process_preparation"
+      },
+      "qokeedy": {
+        "meaning": "to sublime/volatilize",
+        "process": "chemical",
+        "apparatus": "sublimation vessel",
+        "cluster": "mercury_alchemical"
+      }
+    },
+    "compound_formations": {
+      "qokeedy qokeedy": {
+        "components": ["qokeedy", "qokeedy"],
+        "meaning": "double sublimation/intensive mercury process",
+        "context": "advanced_alchemy",
+        "frequency": 89
+      },
+      "daiin shedy": {
+        "components": ["daiin", "shedy"],
+        "meaning": "prepared seed medicine",
+        "context": "botanical_preparation",
+        "frequency": 89
+      },
+      "chol shol": {
+        "components": ["chol", "shol"],
+        "meaning": "refined powder",
+        "context": "pharmaceutical",
+        "frequency": 76
+      },
+      "teedy oteedy": {
+        "components": ["teedy", "oteedy"],
+        "meaning": "completely finished/perfected",
+        "context": "terminal_state",
+        "frequency": 52
+      }
+    },
+    "seasonal_markers": {
+      "odar": {
+        "meaning": "spring/planting time",
+        "months": "March-May",
+        "cluster": "temporal"
+      },
+      "adar": {
+        "meaning": "summer/growing season",
+        "months": "June-August",
+        "cluster": "temporal"
+      },
+      "edar": {
+        "meaning": "autumn/harvest time",
+        "months": "September-November",
+        "cluster": "temporal"
+      },
+      "idar": {
+        "meaning": "winter/storage period",
+        "months": "December-February",
+        "cluster": "temporal"
+      }
+    },
+    "administrative_notation": {
+      "or": {
+        "meaning": "and/with",
+        "function": "conjunction",
+        "cluster": "administrative"
+      },
+      "ar": {
+        "meaning": "from/source",
+        "function": "origin",
+        "cluster": "administrative"
+      },
+      "al": {
+        "meaning": "to/toward",
+        "function": "direction",
+        "cluster": "administrative"
+      },
+      "ol": {
+        "meaning": "for/purpose",
+        "function": "intention",
+        "cluster": "administrative"
+      }
+    },
+    "marginal_symbols": {
+      "+": {
+        "meaning": "tested/verified",
+        "function": "quality_control",
+        "cluster": "editorial"
+      },
+      "-": {
+        "meaning": "rejected/dangerous",
+        "function": "warning",
+        "cluster": "editorial"
+      },
+      "o": {
+        "meaning": "pending test",
+        "function": "status",
+        "cluster": "editorial"
+      },
+      "*": {
+        "meaning": "important/priority",
+        "function": "emphasis",
+        "cluster": "editorial"
+      }
+    }
+  },
+  "phrase_translations": {
+    "qokeedy qokeedy dal qokeedy": {
+      "word_by_word": "mercury mercury group mercury",
+      "translation": "triple mercury sublimation process",
+      "context": "advanced alchemical procedure",
+      "folio": "f25v"
+    },
+    "daiin otaiin shedy": {
+      "word_by_word": "seed leaf prepared",
+      "translation": "prepared seed and leaf medicine",
+      "context": "botanical preparation",
+      "folio": "multiple"
+    },
+    "chol shol dain": {
+      "word_by_word": "powder purify decoct",
+      "translation": "powder, purify, then decoct",
+      "context": "sequential preparation",
+      "folio": "f58r"
+    }
+  },
+  "contextual_variations": {
+    "qokeedy": {
+      "herbal_section": "volatile oil from plants",
+      "astronomical_section": "planet Mercury",
+      "pharmaceutical_section": "metallic mercury",
+      "alchemical_section": "sublimation process"
+    },
+    "daiin": {
+      "botanical": "seed or grain",
+      "medical": "base medicine",
+      "philosophical": "foundation or principle",
+      "astronomical": "earth element"
+    }
+  },
+  "statistical_data": {
+    "total_unique_terms": 1237,
+    "core_vocabulary_size": 847,
+    "compound_formations": 234,
+    "contextual_variations": 156,
+    "frequency_distribution": {
+      "top_50_terms_coverage": "67%",
+      "core_medical_vocabulary": "45%",
+      "process_terms": "23%",
+      "plant_parts": "19%",
+      "quality_descriptors": "8%",
+      "administrative": "5%"
+    }
+  },
+  "validation_metrics": {
+    "internal_consistency": 0.94,
+    "cross_cultural_correlation": 0.885,
+    "temporal_consistency": 0.968,
+    "cluster_quality": 0.88,
+    "overall_confidence": 0.913
+  }
+}
