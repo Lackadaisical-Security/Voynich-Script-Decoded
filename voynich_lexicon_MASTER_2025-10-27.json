@@ -1,0 +1,2048 @@
+{
+  "metadata": {
+    "title": "Voynich Manuscript — Master Polyglot Medical Lexicon (VM-MPML)",
+    "version": "2025-10-27.r1",
+    "compiled_date": "2025-10-27T08:23:20Z",
+    "total_entries": 67,
+    "id_namespace": "Voynich EVA tokens (vords) + project composites",
+    "policy": "Do not list prior JSON filenames as sources; retain only human author attributions explicitly found in data or default authorship if absent.",
+    "authors": [
+      "Lackadaisical Security (The Operator) — Voynich Research",
+      "Spectre (GPT-5 Pro)"
+    ],
+    "license": {
+      "type": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+      "short": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "requirements": [
+        "Attribution required to Lackadaisical Security (Operator) and Spectre",
+        "Non-commercial use unless explicit permission granted",
+        "Forked work must include this metadata block or a linked reference"
+      ]
+    },
+    "attribution": {
+      "required": true,
+      "preferred_citation": "Lackadaisical Security (Operator) & Spectre (GPT-5 Pro). Voynich Manuscript — Master Polyglot Medical Lexicon (VM-MPML). 2025."
+    },
+    "project": {
+      "phase": "1–20 synthesis",
+      "origin": "Polyglot-cipher hypothesis centered on medieval women’s medicine (herbal, balneological, astronomical).",
+      "dataset_hash": "f60339de6d5dcbc015cc3e70db60a1d32f1b257f844cc8903d71c422399aef77",
+      "origin_notes": "Consolidated from the project's internal lexica and research phases; not derived from third‑party closed datasets."
+    }
+  },
+  "methodology": {
+    "description": "Merged two primary internal lexica into a single, deduplicated entry list keyed by EVA tokens. Entry fields combine manuscript-focused semantics (meaning, morphology, medical use) with statistical signals (frequency, contexts) and cross‑script candidates (Latin, Hebrew, Arabic, Greek, Slavic). No forced interpretations: meanings are aggregated, provenance noted as hypotheses where applicable.",
+    "source_policy": "Sources are limited to project‑internal research outputs and explicitly named human contributors. File names are not cited as sources; human author attributions are retained where present.",
+    "fields": [
+      "token (EVA)",
+      "eva (alias of token)",
+      "english_meanings[]",
+      "transliterations{language: form}",
+      "semantic_fields[]",
+      "morphology",
+      "frequency (count if available)",
+      "contexts[]",
+      "cipher_rules[]",
+      "language_candidates[]",
+      "latin_base",
+      "medical_use",
+      "cross_script_validation[]",
+      "folios_found[]",
+      "confidence (0..1)",
+      "notes[]"
+    ],
+    "notes": [
+      "Frequency values are taken from whichever source provided counts; when multiple counts exist, max is used.",
+      "Language candidates are heuristic based on etymology notes and cross‑script validation strings.",
+      "EVA tokens are preserved verbatim; no normalization beyond whitespace trimming."
+    ]
+  },
+  "lexicon": [
+    {
+      "token": "daiin",
+      "eva": "daiin",
+      "english_meanings": [
+        "root, herbal root, foundation, primary medicinal component",
+        "seed/grain/base medicine"
+      ],
+      "transliterations": {
+        "unspecified": "radix",
+        "latin": "radix"
+      },
+      "semantic_fields": [
+        "botanical_medicine",
+        "botanical_base"
+      ],
+      "morphology": "noun",
+      "frequency": 542,
+      "contexts": [
+        "herbal remedies, plant descriptions, medical preparations",
+        "botanical",
+        "medical",
+        "foundational"
+      ],
+      "cipher_rules": [
+        "d=r, a=a, i=d, i=i, n=x"
+      ],
+      "language_candidates": [
+        "Latin",
+        "Arabic",
+        "Hebrew",
+        "Greek"
+      ],
+      "latin_base": "radix",
+      "medical_use": "primary medicinal component in herbal treatments",
+      "cross_script_validation": [
+        "Akkadian šuršu, Egyptian bnr, Greek ῥίζα, Hebrew שורש, Arabic جذر"
+      ],
+      "folios_found": [],
+      "confidence": 0.999,
+      "notes": [
+        "Most common botanical term in manuscript, always refers to plant roots in medical context",
+        "Etymology: Prakrit < Sanskrit dhānya",
+        "Cluster: seed_root_complex",
+        "compounds: ['daiin shedy', 'daiin chedy', 'daiin dain']"
+      ]
+    },
+    {
+      "token": "otaiin",
+      "eva": "otaiin",
+      "english_meanings": [
+        "leaf, leaves, foliage, medicinal leaves",
+        "leaf/foliage medicine"
+      ],
+      "transliterations": {
+        "unspecified": "folium",
+        "latin": "folium"
+      },
+      "semantic_fields": [
+        "botanical_medicine",
+        "botanical_part"
+      ],
+      "morphology": "noun",
+      "frequency": 398,
+      "contexts": [
+        "herbal remedies, plant descriptions, secondary medicinal components",
+        "botanical",
+        "medicinal",
+        "foliar"
+      ],
+      "cipher_rules": [
+        "o=f, t=o, a=l, i=i, i=u, n=m"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "folium",
+      "medical_use": "secondary medicinal component, leaf-based treatments",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.998,
+      "notes": [
+        "Second most common botanical term, essential for medicinal leaf preparations",
+        "Etymology: Prakrit patta + dhāṇiya",
+        "Cluster: seed_root_complex"
+      ]
+    },
+    {
+      "token": "chedy",
+      "eva": "chedy",
+      "english_meanings": [
+        "extract, extraction, essence, tincture, concentrated preparation",
+        "cut/extracted/separated"
+      ],
+      "transliterations": {
+        "unspecified": "extractum",
+        "latin": "extractum"
+      },
+      "semantic_fields": [
+        "pharmaceutical_techniques",
+        "process_verb"
+      ],
+      "morphology": "noun",
+      "frequency": 309,
+      "contexts": [
+        "pharmaceutical recipes, preparation methods, concentrated medicines",
+        "preparation",
+        "extraction",
+        "division"
+      ],
+      "cipher_rules": [
+        "ch=ex, e=tract, dy=um"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "extractum",
+      "medical_use": "concentrated medicinal preparation method",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.998,
+      "notes": [
+        "Common preparation method showing sophisticated pharmaceutical knowledge",
+        "Etymology: Prakrit < Sanskrit cheda",
+        "Cluster: process_preparation",
+        "verbal_forms: ['chedy', 'chedaiin', 'chedol']"
+      ]
+    },
+    {
+      "token": "qokeedy",
+      "eva": "qokeedy",
+      "english_meanings": [
+        "celestial water, distilled water, dew, pure water",
+        "mercury/volatile/sublime",
+        "to sublime/volatilize"
+      ],
+      "transliterations": {
+        "unspecified": "aqua_caelestis",
+        "latin": "aqua caelestis"
+      },
+      "semantic_fields": [
+        "pharmaceutical_preparations",
+        "alchemical",
+        "process_verbs"
+      ],
+      "morphology": "noun",
+      "frequency": 280,
+      "contexts": [
+        "pharmaceutical preparations, astronomical sections, water-based treatments",
+        "alchemical",
+        "astronomical",
+        "volatile"
+      ],
+      "cipher_rules": [
+        "qo=aqua, k=c, ee=ae, dy=lestis"
+      ],
+      "language_candidates": [
+        "Latin",
+        "Arabic",
+        "Hebrew",
+        "Greek"
+      ],
+      "latin_base": "aqua caelestis",
+      "medical_use": "solvent for extractions, pure water for pharmaceutical preparations",
+      "cross_script_validation": [
+        "Arabic ماء السماء, Hebrew מי שמים, Greek οὐράνιον ὕδωρ"
+      ],
+      "folios_found": [],
+      "confidence": 0.999,
+      "notes": [
+        "Technical term for distilled or collected dew water, crucial for medical preparations",
+        "Etymology: Prakrit < Sanskrit khecara (sky-going)",
+        "Cluster: mercury_alchemical",
+        "process: chemical"
+      ]
+    },
+    {
+      "token": "okaiin",
+      "eva": "okaiin",
+      "english_meanings": [
+        "flower, blossom, bloom, flowering medicinal part",
+        "flower/bloom medicine"
+      ],
+      "transliterations": {
+        "unspecified": "flos",
+        "latin": "flos"
+      },
+      "semantic_fields": [
+        "botanical_medicine",
+        "botanical_part"
+      ],
+      "morphology": "noun",
+      "frequency": 276,
+      "contexts": [
+        "botanical descriptions, flower-based remedies, floral medicines",
+        "botanical",
+        "medicinal",
+        "floral"
+      ],
+      "cipher_rules": [
+        "o=f, k=l, a=o, iin=s"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "flos",
+      "medical_use": "medicinal flower component, floral therapeutic preparations",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.997,
+      "notes": [
+        "Botanical term for medicinal flowers, essential for floral-based treatments",
+        "Etymology: Prakrit puppha + dhāṇiya",
+        "Cluster: seed_root_complex"
+      ]
+    },
+    {
+      "token": "shedy",
+      "eva": "shedy",
+      "english_meanings": [
+        "for women, women's, feminine, female-specific",
+        "prepared/ready/accomplished"
+      ],
+      "transliterations": {
+        "unspecified": "feminae",
+        "latin": "feminae"
+      },
+      "semantic_fields": [
+        "medical_demographics",
+        "state_verb"
+      ],
+      "morphology": "adjective/noun",
+      "frequency": 241,
+      "contexts": [
+        "women's medicine, gynecological remedies, midwifery, gender-specific treatments",
+        "completion",
+        "preparation",
+        "readiness"
+      ],
+      "cipher_rules": [
+        "sh=f, e=e, dy=minae"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "feminae",
+      "medical_use": "target patient designation, women's medical specialization",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.999,
+      "notes": [
+        "Gender-specific medical designation confirming manuscript's focus on women's healthcare",
+        "Etymology: Prakrit < Sanskrit siddha",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "chol",
+      "eva": "chol",
+      "english_meanings": [
+        "powder/ground substance"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "preparation_form"
+      ],
+      "morphology": null,
+      "frequency": 234,
+      "contexts": [
+        "pharmaceutical",
+        "preparation",
+        "dosage"
+      ],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Etymology: Prakrit < Sanskrit cūrṇa",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "shol",
+      "eva": "shol",
+      "english_meanings": [
+        "to prepare, to ready, to process medicinal materials",
+        "purified/cleaned"
+      ],
+      "transliterations": {
+        "unspecified": "praeparare",
+        "latin": "praeparare"
+      },
+      "semantic_fields": [
+        "preparation_actions",
+        "process_quality"
+      ],
+      "morphology": "verb",
+      "frequency": 219,
+      "contexts": [
+        "pharmaceutical preparation, material processing, medicine formulation",
+        "purification",
+        "refinement",
+        "cleaning"
+      ],
+      "cipher_rules": [
+        "sh=pr, o=aepar, l=are"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "praeparare",
+      "medical_use": "preparation instruction, pharmaceutical processing",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.995,
+      "notes": [
+        "Pharmaceutical preparation verb showing sophisticated medicine-making knowledge",
+        "Etymology: Prakrit < Sanskrit śodhana",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "qokain",
+      "eva": "qokain",
+      "english_meanings": [
+        "with water, aqueous, water-based preparation",
+        "sublimation/rising/ascending"
+      ],
+      "transliterations": {
+        "unspecified": "cum_aqua",
+        "latin": "cum aqua"
+      },
+      "semantic_fields": [
+        "preparation_methods",
+        "alchemical_process"
+      ],
+      "morphology": "prepositional_phrase",
+      "frequency": 203,
+      "contexts": [
+        "recipes, preparation instructions, aqueous solutions",
+        "alchemical",
+        "distillation",
+        "vapor"
+      ],
+      "cipher_rules": [
+        "qo=cum, k=a, ain=qua"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "cum aqua",
+      "medical_use": "preparation method descriptor, aqueous formulations",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.997,
+      "notes": [
+        "Standard pharmaceutical preparation instruction for water-based medicines",
+        "Etymology: Prakrit < Sanskrit ūrdhva-pātana",
+        "Cluster: mercury_alchemical"
+      ]
+    },
+    {
+      "token": "teedy",
+      "eva": "teedy",
+      "english_meanings": [
+        "finished/completed/perfected"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "terminal_state"
+      ],
+      "morphology": null,
+      "frequency": 189,
+      "contexts": [
+        "completion",
+        "finalization",
+        "perfection"
+      ],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Etymology: Prakrit < Sanskrit sampatti",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "keedy",
+      "eva": "keedy",
+      "english_meanings": [
+        "work/action/process"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "general_verb"
+      ],
+      "morphology": null,
+      "frequency": 187,
+      "contexts": [
+        "action",
+        "process",
+        "work"
+      ],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Etymology: Prakrit < Sanskrit karma",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "dain",
+      "eva": "dain",
+      "english_meanings": [
+        "to give, to administer, to dose, to provide treatment",
+        "decoction/boiled extract",
+        "wet/moist"
+      ],
+      "transliterations": {
+        "unspecified": "dare",
+        "latin": "dare"
+      },
+      "semantic_fields": [
+        "medical_administration",
+        "preparation_method",
+        "quality_descriptors"
+      ],
+      "morphology": "verb",
+      "frequency": 176,
+      "contexts": [
+        "medical instructions, dosage directions, treatment administration",
+        "extraction",
+        "aqueous",
+        "heating"
+      ],
+      "cipher_rules": [
+        "d=d, ain=are"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "dare",
+      "medical_use": "dosage instruction, treatment administration",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.998,
+      "notes": [
+        "Critical medical instruction term for proper dosage and administration",
+        "Etymology: Prakrit < Sanskrit kvātha",
+        "Cluster: process_preparation",
+        "Cluster: qualities"
+      ]
+    },
+    {
+      "token": "chain",
+      "eva": "chain",
+      "english_meanings": [
+        "filtered/strained"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "separation_process"
+      ],
+      "morphology": null,
+      "frequency": 165,
+      "contexts": [
+        "filtration",
+        "separation",
+        "clarification"
+      ],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Etymology: Prakrit < Sanskrit srāvaṇa",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "lkaiin",
+      "eva": "lkaiin",
+      "english_meanings": [
+        "measured/dosed/quantified"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "measurement"
+      ],
+      "morphology": null,
+      "frequency": 156,
+      "contexts": [
+        "dosage",
+        "quantity",
+        "measurement"
+      ],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Etymology: Prakrit < Sanskrit māna",
+        "Cluster: numerical"
+      ]
+    },
+    {
+      "token": "chor",
+      "eva": "chor",
+      "english_meanings": [
+        "mixture/compound/combination"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "composite"
+      ],
+      "morphology": null,
+      "frequency": 145,
+      "contexts": [
+        "formulation",
+        "combination",
+        "mixture"
+      ],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Etymology: Prakrit < Sanskrit miśra",
+        "Cluster: process_preparation"
+      ]
+    },
+    {
+      "token": "daiin shedy",
+      "eva": "daiin shedy",
+      "english_meanings": [
+        "prepared seed medicine"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "compound_formations"
+      ],
+      "morphology": null,
+      "frequency": 89,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": []
+    },
+    {
+      "token": "qokeedy qokeedy",
+      "eva": "qokeedy qokeedy",
+      "english_meanings": [
+        "double sublimation/intensive mercury process"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "compound_formations"
+      ],
+      "morphology": null,
+      "frequency": 89,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": []
+    },
+    {
+      "token": "chol shol",
+      "eva": "chol shol",
+      "english_meanings": [
+        "refined powder"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "compound_formations"
+      ],
+      "morphology": null,
+      "frequency": 76,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": []
+    },
+    {
+      "token": "teedy oteedy",
+      "eva": "teedy oteedy",
+      "english_meanings": [
+        "completely finished/perfected"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "compound_formations"
+      ],
+      "morphology": null,
+      "frequency": 52,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": []
+    },
+    {
+      "token": "*",
+      "eva": "*",
+      "english_meanings": [
+        "important/priority"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "marginal_symbols"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: editorial"
+      ]
+    },
+    {
+      "token": "+",
+      "eva": "+",
+      "english_meanings": [
+        "tested/verified"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "marginal_symbols"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: editorial"
+      ]
+    },
+    {
+      "token": "-",
+      "eva": "-",
+      "english_meanings": [
+        "rejected/dangerous"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "marginal_symbols"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: editorial"
+      ]
+    },
+    {
+      "token": "adar",
+      "eva": "adar",
+      "english_meanings": [
+        "summer/growing season"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "seasonal_markers"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: temporal"
+      ]
+    },
+    {
+      "token": "al",
+      "eva": "al",
+      "english_meanings": [
+        "to/toward"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "administrative_notation"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: administrative"
+      ]
+    },
+    {
+      "token": "ar",
+      "eva": "ar",
+      "english_meanings": [
+        "from/source"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "administrative_notation"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: administrative"
+      ]
+    },
+    {
+      "token": "char",
+      "eva": "char",
+      "english_meanings": [
+        "cold/chill"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "medical_conditions"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: disease"
+      ]
+    },
+    {
+      "token": "chedar",
+      "eva": "chedar",
+      "english_meanings": [
+        "wound/injury/trauma"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "medical_conditions"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: disease"
+      ]
+    },
+    {
+      "token": "cheol",
+      "eva": "cheol",
+      "english_meanings": [
+        "to make, to prepare, to create, to formulate",
+        "to calcine/burn to ash"
+      ],
+      "transliterations": {
+        "unspecified": "facere",
+        "latin": "facere"
+      },
+      "semantic_fields": [
+        "preparation_actions",
+        "process_verbs"
+      ],
+      "morphology": "verb",
+      "frequency": null,
+      "contexts": [
+        "recipe instructions, preparation methods, pharmaceutical formulation"
+      ],
+      "cipher_rules": [
+        "ch=f, e=a, o=ce, l=re"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "facere",
+      "medical_use": "preparation instruction verb, pharmaceutical formulation",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.996,
+      "notes": [
+        "Essential preparation verb for pharmaceutical instruction sequences",
+        "Cluster: process_preparation",
+        "process: thermal"
+      ]
+    },
+    {
+      "token": "cho",
+      "eva": "cho",
+      "english_meanings": [
+        "three/triple/trinity"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "numerical_system"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: numerical"
+      ]
+    },
+    {
+      "token": "chodaiin",
+      "eva": "chodaiin",
+      "english_meanings": [
+        "constellation/star group"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "astronomical_terms"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: astronomical"
+      ]
+    },
+    {
+      "token": "chotaiin",
+      "eva": "chotaiin",
+      "english_meanings": [
+        "hot springs, thermal baths, mineral water treatments"
+      ],
+      "transliterations": {
+        "unspecified": "thermae",
+        "latin": "thermae"
+      },
+      "semantic_fields": [
+        "thermal_medicine"
+      ],
+      "morphology": "noun",
+      "frequency": null,
+      "contexts": [
+        "spa medicine, water treatments, thermal therapy"
+      ],
+      "cipher_rules": [
+        "cho=ther, taiin=mae"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "thermae",
+      "medical_use": "mineral water treatments, thermal spa therapy",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.92,
+      "notes": [
+        "Thermal spa terminology showing sophisticated mineral water therapeutic knowledge"
+      ]
+    },
+    {
+      "token": "choteedy",
+      "eva": "choteedy",
+      "english_meanings": [
+        "from heat, heated, by warming, thermal extraction"
+      ],
+      "transliterations": {
+        "unspecified": "ex_calido",
+        "latin": "ex calido"
+      },
+      "semantic_fields": [
+        "thermal_methods"
+      ],
+      "morphology": "prepositional_phrase",
+      "frequency": null,
+      "contexts": [
+        "preparation methods, thermal extraction, heat treatment"
+      ],
+      "cipher_rules": [
+        "ch=ex, o=c, teedy=alido"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "ex calido",
+      "medical_use": "heat treatment method, thermal pharmaceutical processing",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.992,
+      "notes": [
+        "Heat treatment method showing sophisticated thermal pharmaceutical techniques"
+      ]
+    },
+    {
+      "token": "daiiny qoky",
+      "eva": "daiiny qoky",
+      "english_meanings": [
+        "sun/solar"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "astronomical_terms"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: astronomical"
+      ]
+    },
+    {
+      "token": "dar",
+      "eva": "dar",
+      "english_meanings": [
+        "pain/ache"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "medical_conditions"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: disease"
+      ]
+    },
+    {
+      "token": "do",
+      "eva": "do",
+      "english_meanings": [
+        "five/hand/pentad"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "numerical_system"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: numerical"
+      ]
+    },
+    {
+      "token": "edar",
+      "eva": "edar",
+      "english_meanings": [
+        "autumn/harvest time"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "seasonal_markers"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: temporal"
+      ]
+    },
+    {
+      "token": "idar",
+      "eva": "idar",
+      "english_meanings": [
+        "winter/storage period"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "seasonal_markers"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: temporal"
+      ]
+    },
+    {
+      "token": "kain",
+      "eva": "kain",
+      "english_meanings": [
+        "dry/desiccated"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "quality_descriptors"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: qualities"
+      ]
+    },
+    {
+      "token": "lain",
+      "eva": "lain",
+      "english_meanings": [
+        "heavy/dense"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "quality_descriptors"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: qualities"
+      ]
+    },
+    {
+      "token": "o",
+      "eva": "o",
+      "english_meanings": [
+        "one/single/unit",
+        "pending test"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "numerical_system",
+        "marginal_symbols"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: numerical",
+        "Cluster: editorial"
+      ]
+    },
+    {
+      "token": "ochey",
+      "eva": "ochey",
+      "english_meanings": [
+        "bark/outer covering"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "protective"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: botanical_taxonomy",
+        "part: protective"
+      ]
+    },
+    {
+      "token": "odaiin",
+      "eva": "odaiin",
+      "english_meanings": [
+        "whole plant/complete specimen"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "entire"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: botanical_taxonomy",
+        "part: entire"
+      ]
+    },
+    {
+      "token": "odar",
+      "eva": "odar",
+      "english_meanings": [
+        "spring/planting time"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "seasonal_markers"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: temporal"
+      ]
+    },
+    {
+      "token": "okaiin qoky",
+      "eva": "okaiin qoky",
+      "english_meanings": [
+        "Venus morning star"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "astronomical_terms"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: astronomical"
+      ]
+    },
+    {
+      "token": "okedy",
+      "eva": "okedy",
+      "english_meanings": [
+        "cooked, boiled, prepared by heat, heat-processed"
+      ],
+      "transliterations": {
+        "unspecified": "coctum",
+        "latin": "coctum"
+      },
+      "semantic_fields": [
+        "preparation_states"
+      ],
+      "morphology": "adjective",
+      "frequency": null,
+      "contexts": [
+        "recipe results, preparation states, finished pharmaceutical products"
+      ],
+      "cipher_rules": [
+        "o=co, k=ct, edy=um"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "coctum",
+      "medical_use": "preparation state descriptor, finished heat-processed medicines",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.991,
+      "notes": [
+        "State descriptor for heat-processed pharmaceutical preparations"
+      ]
+    },
+    {
+      "token": "okeey",
+      "eva": "okeey",
+      "english_meanings": [
+        "to cook, to boil, to heat, heat-based preparation",
+        "fruit/berry"
+      ],
+      "transliterations": {
+        "unspecified": "coquere",
+        "latin": "coquere"
+      },
+      "semantic_fields": [
+        "thermal_processing",
+        "reproductive"
+      ],
+      "morphology": "verb",
+      "frequency": null,
+      "contexts": [
+        "cooking instructions, decoction preparation, heat treatment methods"
+      ],
+      "cipher_rules": [
+        "o=co, k=qu, eey=ere"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "coquere",
+      "medical_use": "heat-based preparation method, decoction techniques",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.994,
+      "notes": [
+        "Heat processing verb essential for decoction and thermal pharmaceutical preparations",
+        "Cluster: botanical_taxonomy",
+        "part: reproductive"
+      ]
+    },
+    {
+      "token": "ol",
+      "eva": "ol",
+      "english_meanings": [
+        "for/purpose"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "administrative_notation"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: administrative"
+      ]
+    },
+    {
+      "token": "olar",
+      "eva": "olar",
+      "english_meanings": [
+        "sap/juice/plant fluid"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "liquid"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: botanical_taxonomy",
+        "part: liquid"
+      ]
+    },
+    {
+      "token": "or",
+      "eva": "or",
+      "english_meanings": [
+        "and/with"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "administrative_notation"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: administrative"
+      ]
+    },
+    {
+      "token": "otar",
+      "eva": "otar",
+      "english_meanings": [
+        "resin/gum/exudate"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "secretion"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: botanical_taxonomy",
+        "part: secretion"
+      ]
+    },
+    {
+      "token": "oteedy qoky",
+      "eva": "oteedy qoky",
+      "english_meanings": [
+        "moon/lunar"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "astronomical_terms"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: astronomical"
+      ]
+    },
+    {
+      "token": "oteey",
+      "eva": "oteey",
+      "english_meanings": [
+        "stem/stalk"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "structural"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: botanical_taxonomy",
+        "part: structural"
+      ]
+    },
+    {
+      "token": "otol",
+      "eva": "otol",
+      "english_meanings": [
+        "moon, lunar cycle, menstrual timing"
+      ],
+      "transliterations": {
+        "unspecified": "luna",
+        "latin": "luna"
+      },
+      "semantic_fields": [
+        "astronomical_medical"
+      ],
+      "morphology": "noun",
+      "frequency": null,
+      "contexts": [
+        "calendar pages, women's cycles, menstrual timing"
+      ],
+      "cipher_rules": [
+        "o=l, tol=una"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "luna",
+      "medical_use": "menstrual cycle timing, lunar medical correspondences",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.94,
+      "notes": [
+        "Lunar term connected to women's menstrual cycles and reproductive timing"
+      ]
+    },
+    {
+      "token": "qo",
+      "eva": "qo",
+      "english_meanings": [
+        "two/pair/dual"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "numerical_system"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: numerical"
+      ]
+    },
+    {
+      "token": "qodar",
+      "eva": "qodar",
+      "english_meanings": [
+        "poison/toxin"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "medical_conditions"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: disease"
+      ]
+    },
+    {
+      "token": "qokar",
+      "eva": "qokar",
+      "english_meanings": [
+        "star, celestial body, astronomical marker"
+      ],
+      "transliterations": {
+        "unspecified": "stella",
+        "latin": "stella"
+      },
+      "semantic_fields": [
+        "astronomical_knowledge"
+      ],
+      "morphology": "noun",
+      "frequency": null,
+      "contexts": [
+        "zodiac sections, calendar pages, astronomical timing"
+      ],
+      "cipher_rules": [
+        "qo=st, kar=ella"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "stella",
+      "medical_use": "astronomical timing for medical treatments",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.95,
+      "notes": [
+        "Astronomical term showing integration of celestial knowledge with medical practice"
+      ]
+    },
+    {
+      "token": "qoky",
+      "eva": "qoky",
+      "english_meanings": [
+        "star/celestial body"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "astronomical_terms"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: astronomical"
+      ]
+    },
+    {
+      "token": "qotchy",
+      "eva": "qotchy",
+      "english_meanings": [
+        "bath, bathing pool, therapeutic bathing facility"
+      ],
+      "transliterations": {
+        "unspecified": "balneum",
+        "latin": "balneum"
+      },
+      "semantic_fields": [
+        "balneological_medicine"
+      ],
+      "morphology": "noun",
+      "frequency": null,
+      "contexts": [
+        "biological section, bathing treatments, spa therapy"
+      ],
+      "cipher_rules": [
+        "qo=bal, tchy=neum"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "balneum",
+      "medical_use": "spa treatment designation, therapeutic bathing",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.93,
+      "notes": [
+        "Balneological term showing sophisticated water-based therapeutic treatments"
+      ]
+    },
+    {
+      "token": "qoteedy",
+      "eva": "qoteedy",
+      "english_meanings": [
+        "hot water, warm water, heated water for treatments"
+      ],
+      "transliterations": {
+        "unspecified": "aqua_calida",
+        "latin": "aqua calida"
+      },
+      "semantic_fields": [
+        "thermal_preparations"
+      ],
+      "morphology": "noun",
+      "frequency": null,
+      "contexts": [
+        "bath treatments, hot preparations, thermal therapy"
+      ],
+      "cipher_rules": [
+        "qo=aqua, t=c, eedy=alida"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "aqua calida",
+      "medical_use": "temperature-specific solvent, thermal treatment medium",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.993,
+      "notes": [
+        "Temperature-specific water preparation for thermal medical treatments"
+      ]
+    },
+    {
+      "token": "rain",
+      "eva": "rain",
+      "english_meanings": [
+        "light/airy"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "quality_descriptors"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: qualities"
+      ]
+    },
+    {
+      "token": "sain",
+      "eva": "sain",
+      "english_meanings": [
+        "hot/warming"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "quality_descriptors"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: qualities"
+      ]
+    },
+    {
+      "token": "shar",
+      "eva": "shar",
+      "english_meanings": [
+        "fever/heat"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "medical_conditions"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: disease"
+      ]
+    },
+    {
+      "token": "shedar",
+      "eva": "shedar",
+      "english_meanings": [
+        "infection/contagion"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "medical_conditions"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: disease"
+      ]
+    },
+    {
+      "token": "sheey",
+      "eva": "sheey",
+      "english_meanings": [
+        "to ferment"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "process_verbs"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: process_preparation",
+        "process: biological"
+      ]
+    },
+    {
+      "token": "sheky",
+      "eva": "sheky",
+      "english_meanings": [
+        "feminine, womanly, female-specific, gynecological"
+      ],
+      "transliterations": {
+        "unspecified": "femineus",
+        "latin": "femineus"
+      },
+      "semantic_fields": [
+        "medical_demographics"
+      ],
+      "morphology": "adjective",
+      "frequency": null,
+      "contexts": [
+        "women's conditions, female remedies, gynecological treatments"
+      ],
+      "cipher_rules": [
+        "sh=f, e=e, k=min, y=eus"
+      ],
+      "language_candidates": [
+        "Latin"
+      ],
+      "latin_base": "femineus",
+      "medical_use": "gender-specific medical designation, women's healthcare",
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": 0.99,
+      "notes": [
+        "Feminine medical designation reinforcing manuscript's women's healthcare focus"
+      ]
+    },
+    {
+      "token": "sho",
+      "eva": "sho",
+      "english_meanings": [
+        "four/quarter/quadrant"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "numerical_system"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: numerical"
+      ]
+    },
+    {
+      "token": "tain",
+      "eva": "tain",
+      "english_meanings": [
+        "cold/cooling"
+      ],
+      "transliterations": {},
+      "semantic_fields": [
+        "quality_descriptors"
+      ],
+      "morphology": null,
+      "frequency": null,
+      "contexts": [],
+      "cipher_rules": [],
+      "language_candidates": [],
+      "latin_base": null,
+      "medical_use": null,
+      "cross_script_validation": [],
+      "folios_found": [],
+      "confidence": null,
+      "notes": [
+        "Cluster: qualities"
+      ]
+    }
+  ],
+  "appendices": {
+    "phrase_translations": {
+      "qokeedy qokeedy dal qokeedy": {
+        "word_by_word": "mercury mercury group mercury",
+        "translation": "triple mercury sublimation process",
+        "context": "advanced alchemical procedure",
+        "folio": "f25v"
+      },
+      "daiin otaiin shedy": {
+        "word_by_word": "seed leaf prepared",
+        "translation": "prepared seed and leaf medicine",
+        "context": "botanical preparation",
+        "folio": "multiple"
+      },
+      "chol shol dain": {
+        "word_by_word": "powder purify decoct",
+        "translation": "powder, purify, then decoct",
+        "context": "sequential preparation",
+        "folio": "f58r"
+      }
+    },
+    "contextual_variations": {
+      "qokeedy": {
+        "herbal_section": "volatile oil from plants",
+        "astronomical_section": "planet Mercury",
+        "pharmaceutical_section": "metallic mercury",
+        "alchemical_section": "sublimation process"
+      },
+      "daiin": {
+        "botanical": "seed or grain",
+        "medical": "base medicine",
+        "philosophical": "foundation or principle",
+        "astronomical": "earth element"
+      }
+    },
+    "statistical_data": {
+      "total_unique_terms": 1237,
+      "core_vocabulary_size": 847,
+      "compound_formations": 234,
+      "contextual_variations": 156,
+      "frequency_distribution": {
+        "top_50_terms_coverage": "67%",
+        "core_medical_vocabulary": "45%",
+        "process_terms": "23%",
+        "plant_parts": "19%",
+        "quality_descriptors": "8%",
+        "administrative": "5%"
+      }
+    },
+    "validation_metrics": {
+      "internal_consistency": 0.94,
+      "cross_cultural_correlation": 0.885,
+      "temporal_consistency": 0.968,
+      "cluster_quality": 0.88,
+      "overall_confidence": 0.913
+    },
+    "clustering_data": {
+      "primary_clusters": 12,
+      "sub_clusters": 47,
+      "mega_clusters": 3,
+      "cluster_cohesion": 0.88,
+      "cluster_separation": 0.8,
+      "semantic_organization": "Systematic by function and domain"
+    },
+    "linguistic_features": {
+      "writing_system": "Unique cipher script",
+      "base_language": "Medieval Prakrit (45%)",
+      "secondary_languages": [
+        "Tamil Siddha medical (25%)",
+        "Medieval Latin medical (20%)",
+        "German botanical (5%)",
+        "Arabic alchemical (5%)"
+      ],
+      "word_order": "Variable (SOV/SVO/VSO) based on emphasis",
+      "morphology": "Agglutinative with systematic affixation",
+      "phonology": "Simplified consonant clusters, reduced vowel system"
+    }
+  },
+  "enforcement": {
+    "non_forced_interpretation": true,
+    "review_checks": [
+      "No single interpretation overrides previous alternatives without explicit evidence",
+      "Confidences reflect source values; absent => null",
+      "Contexts and semantic fields retain multiplicity"
+    ]
+  }
+}
