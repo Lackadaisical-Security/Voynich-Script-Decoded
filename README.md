@@ -227,6 +227,17 @@ Any individual placed on the ban list may be considered for removal under the fo
 
 **Note:** Redemption is possible — but never automatic.
 
+## 🔺 Medical Use Disclaimer & Replication Warning
+
+This decoded corpus of the Voynich manuscript is presented solely for academic, cryptographic, and linguistic research purposes. Lackadaisical Security **does not endorse, recommend, or condone** any attempt to replicate, apply, or interpret the decoded contents as instructions for medicinal, pharmaceutical, or therapeutic use.
+
+The material reflects historical encoding patterns and speculative interpretation of botanical and procedural language within the manuscript’s structure. **It is not verified medical guidance, nor intended for use as such.**
+
+Any references to remedies, preparations, or anatomical terms are to be treated as artifacts of the manuscript’s original ciphered language and context — **not actionable protocols**.
+
+> 🛑 **Do not attempt to create, test, or apply any formulation based on this material.** All health, herbal, or medical experimentation must be conducted by qualified professionals within licensed institutions. Lackadaisical Security assumes no responsibility for misuse, misinterpretation, or harm resulting from failure to adhere to this guidance.
+
+This is a project of research documents — **not** a field manual. It represents a decipherment of the voynich manuscript.
 
 ---
 
@@ -254,8 +265,10 @@ This Voynich Manuscript decipherment is part of Lackadaisical Security's broader
 
 ---
 
+“We decipher. We don’t prescribe.”
+
 **Signed,**
-**Lackadaisical Security - Linguistics Division**
+**Lackadaisical Security 🌀👻 - Linguistics Division**
 *Breaking the Unbreakable Since 2025*
 
 > *"After 600 years, the world's most mysterious manuscript speaks again."*
@@ -265,4 +278,3 @@ This Voynich Manuscript decipherment is part of Lackadaisical Security's broader
 **Document Classification:** Academic Research - Open Access (with attribution requirements)
 **Last Updated:** August 2025
 **Repository Status:** Complete - Translation Matrix Achieved
-
