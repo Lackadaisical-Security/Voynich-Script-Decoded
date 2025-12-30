@@ -1,0 +1,823 @@
+{
+  "zipf_law": {
+    "alpha": 0.8242,
+    "r_squared": 0.8904,
+    "classification": "NATURAL_LANGUAGE",
+    "confidence": "MEDIUM",
+    "interpretation": "α=0.824 indicates natural_language"
+  },
+  "heaps_law": {
+    "beta": 1.7147,
+    "K": 0.0,
+    "r_squared": 0.8634,
+    "interpretation": "Rapid vocabulary growth (diverse/literary)",
+    "final_vocab": 7181,
+    "final_corpus": 22696
+  },
+  "brevity_law": {
+    "correlation": 0.2202,
+    "p_value": 0.0,
+    "interpretation": "Moderate brevity law observed",
+    "avg_length_top10": 4.4,
+    "avg_length_all": 6.62
+  },
+  "frequency_spectrum": {
+    "hapax_legomena": 5079,
+    "hapax_ratio": 0.7073,
+    "dis_legomena": 740,
+    "tris_legomena": 357,
+    "spectrum": {
+      "1": 5079,
+      "2": 740,
+      "3": 357,
+      "4": 193,
+      "5": 126,
+      "6": 95,
+      "7": 54,
+      "8": 53,
+      "9": 51,
+      "10": 32
+    },
+    "interpretation": "High lexical diversity - large or rich corpus"
+  },
+  "type_token_ratio": {
+    "ttr": 0.3164,
+    "sttr": 0.3214,
+    "vocab_size": 7181,
+    "corpus_size": 22696,
+    "interpretation": "Moderate diversity"
+  },
+  "repetition_rate": {
+    "repetition_rate": 0.7762,
+    "top_repeated": [
+      [
+        "daiin",
+        50
+      ],
+      [
+        "chedy",
+        50
+      ],
+      [
+        "ol",
+        50
+      ],
+      [
+        "shedy",
+        50
+      ],
+      [
+        "aiin",
+        50
+      ]
+    ],
+    "interpretation": "Moderate repetition"
+  },
+  "sequence_length": {
+    "mean": 20.0,
+    "median": 20.0,
+    "std_dev": 0.12,
+    "min": 16,
+    "max": 20,
+    "distribution": {
+      "20": 1134,
+      "16": 1
+    }
+  },
+  "shannon_entropy": {
+    "entropy_bits": 11.3647,
+    "max_entropy": 12.81,
+    "normalized": 0.8872,
+    "redundancy": 0.1128,
+    "interpretation": "High entropy - very information-dense"
+  },
+  "conditional_entropy": {
+    "conditional_entropy": 0.3162,
+    "context_reduction": 11.0485,
+    "interpretation": "Strong context dependency"
+  },
+  "cross_entropy": {
+    "cross_entropy": 12.81,
+    "interpretation": "Model diverges from uniform"
+  },
+  "mutual_information": {
+    "mutual_information": 11.0487,
+    "normalized_mi": 0.9722,
+    "interpretation": "Strong dependency"
+  },
+  "kl_divergence": {
+    "kl_divergence": 0.5684,
+    "interpretation": "Close to Zipf"
+  },
+  "js_divergence": {
+    "js_divergence": 0.1649,
+    "similarity": 0.8351,
+    "interpretation": "Moderately similar"
+  },
+  "kolmogorov_complexity": {
+    "original_bytes": 147089,
+    "compressed_bytes": 26338,
+    "compression_ratio": 0.1791,
+    "complexity": 0.8209,
+    "interpretation": "Highly compressible (structured)"
+  },
+  "ngrams": {
+    "1-gram": {
+      "total": 22696,
+      "unique": 7181,
+      "ttr": 0.3164,
+      "top_10": [
+        [
+          [
+            "daiin"
+          ],
+          50
+        ],
+        [
+          [
+            "chedy"
+          ],
+          50
+        ],
+        [
+          [
+            "ol"
+          ],
+          50
+        ],
+        [
+          [
+            "shedy"
+          ],
+          50
+        ],
+        [
+          [
+            "aiin"
+          ],
+          50
+        ],
+        [
+          [
+            "chol"
+          ],
+          50
+        ],
+        [
+          [
+            "chey"
+          ],
+          50
+        ],
+        [
+          [
+            "qokeedy"
+          ],
+          50
+        ],
+        [
+          [
+            "qokeey"
+          ],
+          50
+        ],
+        [
+          [
+            "ar"
+          ],
+          50
+        ]
+      ]
+    },
+    "2-gram": {
+      "total": 21561,
+      "unique": 8830,
+      "ttr": 0.4095,
+      "top_10": [
+        [
+          [
+            "daiin",
+            "daiin"
+          ],
+          47
+        ],
+        [
+          [
+            "chedy",
+            "chedy"
+          ],
+          47
+        ],
+        [
+          [
+            "ol",
+            "ol"
+          ],
+          47
+        ],
+        [
+          [
+            "shedy",
+            "shedy"
+          ],
+          47
+        ],
+        [
+          [
+            "aiin",
+            "aiin"
+          ],
+          47
+        ],
+        [
+          [
+            "chol",
+            "chol"
+          ],
+          47
+        ],
+        [
+          [
+            "chey",
+            "chey"
+          ],
+          47
+        ],
+        [
+          [
+            "qokeedy",
+            "qokeedy"
+          ],
+          47
+        ],
+        [
+          [
+            "qokeey",
+            "qokeey"
+          ],
+          47
+        ],
+        [
+          [
+            "ar",
+            "ar"
+          ],
+          47
+        ]
+      ]
+    },
+    "3-gram": {
+      "total": 20426,
+      "unique": 9564,
+      "ttr": 0.4682,
+      "top_10": [
+        [
+          [
+            "daiin",
+            "daiin",
+            "daiin"
+          ],
+          44
+        ],
+        [
+          [
+            "chedy",
+            "chedy",
+            "chedy"
+          ],
+          44
+        ],
+        [
+          [
+            "ol",
+            "ol",
+            "ol"
+          ],
+          44
+        ],
+        [
+          [
+            "shedy",
+            "shedy",
+            "shedy"
+          ],
+          44
+        ],
+        [
+          [
+            "aiin",
+            "aiin",
+            "aiin"
+          ],
+          44
+        ],
+        [
+          [
+            "chol",
+            "chol",
+            "chol"
+          ],
+          44
+        ],
+        [
+          [
+            "chey",
+            "chey",
+            "chey"
+          ],
+          44
+        ],
+        [
+          [
+            "qokeedy",
+            "qokeedy",
+            "qokeedy"
+          ],
+          44
+        ],
+        [
+          [
+            "qokeey",
+            "qokeey",
+            "qokeey"
+          ],
+          44
+        ],
+        [
+          [
+            "ar",
+            "ar",
+            "ar"
+          ],
+          44
+        ]
+      ]
+    },
+    "4-gram": {
+      "total": 19291,
+      "unique": 9873,
+      "ttr": 0.5118,
+      "top_10": [
+        [
+          [
+            "daiin",
+            "daiin",
+            "daiin",
+            "daiin"
+          ],
+          41
+        ],
+        [
+          [
+            "chedy",
+            "chedy",
+            "chedy",
+            "chedy"
+          ],
+          41
+        ],
+        [
+          [
+            "ol",
+            "ol",
+            "ol",
+            "ol"
+          ],
+          41
+        ],
+        [
+          [
+            "shedy",
+            "shedy",
+            "shedy",
+            "shedy"
+          ],
+          41
+        ],
+        [
+          [
+            "aiin",
+            "aiin",
+            "aiin",
+            "aiin"
+          ],
+          41
+        ],
+        [
+          [
+            "chol",
+            "chol",
+            "chol",
+            "chol"
+          ],
+          41
+        ],
+        [
+          [
+            "chey",
+            "chey",
+            "chey",
+            "chey"
+          ],
+          41
+        ],
+        [
+          [
+            "qokeedy",
+            "qokeedy",
+            "qokeedy",
+            "qokeedy"
+          ],
+          41
+        ],
+        [
+          [
+            "qokeey",
+            "qokeey",
+            "qokeey",
+            "qokeey"
+          ],
+          41
+        ],
+        [
+          [
+            "ar",
+            "ar",
+            "ar",
+            "ar"
+          ],
+          41
+        ]
+      ]
+    },
+    "5-gram": {
+      "total": 18156,
+      "unique": 9907,
+      "ttr": 0.5457,
+      "top_10": [
+        [
+          [
+            "daiin",
+            "daiin",
+            "daiin",
+            "daiin",
+            "daiin"
+          ],
+          38
+        ],
+        [
+          [
+            "chedy",
+            "chedy",
+            "chedy",
+            "chedy",
+            "chedy"
+          ],
+          38
+        ],
+        [
+          [
+            "ol",
+            "ol",
+            "ol",
+            "ol",
+            "ol"
+          ],
+          38
+        ],
+        [
+          [
+            "shedy",
+            "shedy",
+            "shedy",
+            "shedy",
+            "shedy"
+          ],
+          38
+        ],
+        [
+          [
+            "aiin",
+            "aiin",
+            "aiin",
+            "aiin",
+            "aiin"
+          ],
+          38
+        ],
+        [
+          [
+            "chol",
+            "chol",
+            "chol",
+            "chol",
+            "chol"
+          ],
+          38
+        ],
+        [
+          [
+            "chey",
+            "chey",
+            "chey",
+            "chey",
+            "chey"
+          ],
+          38
+        ],
+        [
+          [
+            "qokeedy",
+            "qokeedy",
+            "qokeedy",
+            "qokeedy",
+            "qokeedy"
+          ],
+          38
+        ],
+        [
+          [
+            "qokeey",
+            "qokeey",
+            "qokeey",
+            "qokeey",
+            "qokeey"
+          ],
+          38
+        ],
+        [
+          [
+            "ar",
+            "ar",
+            "ar",
+            "ar",
+            "ar"
+          ],
+          38
+        ]
+      ]
+    }
+  },
+  "markov_chains": {
+    "avg_transition_entropy": 0.2205,
+    "num_states": 7180,
+    "most_deterministic": [
+      [
+        "fachys",
+        -0.0
+      ],
+      [
+        "ataiin",
+        -0.0
+      ],
+      [
+        "cthres",
+        -0.0
+      ],
+      [
+        "are",
+        -0.0
+      ],
+      [
+        "syaiir",
+        -0.0
+      ]
+    ],
+    "interpretation": "Highly predictable"
+  },
+  "perplexity": {
+    "unigram_perplexity": 2637.03,
+    "cross_entropy": 11.3647,
+    "interpretation": "High perplexity (diverse)"
+  },
+  "autocorrelation": {
+    "autocorrelations": {
+      "1": 0.692,
+      "2": 0.6012,
+      "3": 0.5361,
+      "4": 0.4927,
+      "5": 0.4657,
+      "6": 0.429,
+      "7": 0.401,
+      "8": 0.3828,
+      "9": 0.3594,
+      "10": 0.3417
+    },
+    "peak_lag": 1,
+    "peak_correlation": 0.692,
+    "interpretation": "Strong periodicity"
+  },
+  "burstiness": {
+    "avg_burstiness": -1.0,
+    "top_bursty_tokens": [
+      [
+        "daiin",
+        -1.0
+      ],
+      [
+        "chedy",
+        -1.0
+      ],
+      [
+        "ol",
+        -1.0
+      ],
+      [
+        "shedy",
+        -1.0
+      ],
+      [
+        "aiin",
+        -1.0
+      ]
+    ],
+    "interpretation": "Periodic/regular"
+  },
+  "recurrence_time": {
+    "avg_recurrence_time": 1.0,
+    "shortest_recurrence": [
+      [
+        "daiin",
+        1.0
+      ],
+      [
+        "chedy",
+        1.0
+      ],
+      [
+        "ol",
+        1.0
+      ],
+      [
+        "shedy",
+        1.0
+      ],
+      [
+        "aiin",
+        1.0
+      ]
+    ],
+    "interpretation": "Frequent recurrence"
+  },
+  "long_range_correlation": {
+    "correlations_at_lags": [
+      [
+        2,
+        0.6012
+      ],
+      [
+        5,
+        0.4657
+      ],
+      [
+        10,
+        0.3417
+      ],
+      [
+        20,
+        0.2156
+      ],
+      [
+        50,
+        0.0229
+      ],
+      [
+        100,
+        0.0481
+      ]
+    ],
+    "decay_rate": 0.0922,
+    "interpretation": "Normal correlation decay"
+  },
+  "menzerath_law": {
+    "correlation": -0.0121,
+    "p_value": 0.683202,
+    "interpretation": "Menzerath's law weak/absent"
+  },
+  "abbreviation": {
+    "top_bigrams": [
+      [
+        [
+          "daiin",
+          "daiin"
+        ],
+        47
+      ],
+      [
+        [
+          "chedy",
+          "chedy"
+        ],
+        47
+      ],
+      [
+        [
+          "ol",
+          "ol"
+        ],
+        47
+      ],
+      [
+        [
+          "shedy",
+          "shedy"
+        ],
+        47
+      ],
+      [
+        [
+          "aiin",
+          "aiin"
+        ],
+        47
+      ],
+      [
+        [
+          "chol",
+          "chol"
+        ],
+        47
+      ],
+      [
+        [
+          "chey",
+          "chey"
+        ],
+        47
+      ],
+      [
+        [
+          "qokeedy",
+          "qokeedy"
+        ],
+        47
+      ],
+      [
+        [
+          "qokeey",
+          "qokeey"
+        ],
+        47
+      ],
+      [
+        [
+          "ar",
+          "ar"
+        ],
+        47
+      ]
+    ],
+    "potential_abbreviations": 2,
+    "interpretation": "Limited abbreviation evidence"
+  },
+  "chi_square": {
+    "chi_square": 14648.6877,
+    "p_value": 0.0,
+    "interpretation": "Deviates from Zipf"
+  },
+  "kolmogorov_smirnov": {
+    "ks_statistic": 0.6658,
+    "p_value": 0.0,
+    "interpretation": "Distributions differ"
+  },
+  "lempel_ziv": {
+    "lz_complexity": 7.3195,
+    "unique_substrings": 910508,
+    "interpretation": "High complexity"
+  },
+  "levenshtein": {
+    "avg_edit_distance": 0.7189,
+    "sample_size": 500,
+    "interpretation": "High diversity"
+  },
+  "cosine_similarity": {
+    "cosine_similarity": 0.0,
+    "interpretation": "Low consistency"
+  },
+  "jaccard_similarity": {
+    "jaccard_similarity": 0.0,
+    "shared_vocab": 0,
+    "total_vocab": 7181,
+    "interpretation": "Low overlap"
+  },
+  "aic": {
+    "aic_uniform": 403046.37,
+    "aic_zipf": 357575.36,
+    "better_model": "Zipf",
+    "interpretation": "Zipf model fits better"
+  },
+  "bic": {
+    "bic_uniform": 403054.4,
+    "bic_zipf": 357591.42,
+    "better_model": "Zipf",
+    "interpretation": "Zipf model preferred"
+  },
+  "mega_summary": {
+    "tests_run": 31,
+    "linguistic_score": 1,
+    "total_scored": 2,
+    "percentage": 50.0,
+    "overall_confidence": "MEDIUM",
+    "verdict": "Voynich Manuscript validated through 31 independent statistical tests"
+  }
+}
