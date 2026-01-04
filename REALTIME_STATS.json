@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-04T23:04:02.685777Z",
+  "local": {
+    "commit_count": 3,
+    "unique_contributors": 2,
+    "last_commit_date": "2026-01-04 23:03:16 +0000",
+    "last_commit_message": "Fix auto-tracking issues and add real-time stats to README",
+    "current_branch": "copilot/fix-auto-tracking-issues",
+    "tracked_files": 60,
+    "timestamp": "2026-01-04T23:04:02.696510Z"
+  },
+  "github": {}
+}
