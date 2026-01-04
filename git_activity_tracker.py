@@ -23,7 +23,7 @@ def get_git_stats():
         
         # Get contributors
         contributors = subprocess.check_output(
-            ["git", "log", "--format='%an'"],
+            ["git", "log", "--format=%an"],
             text=True
         ).strip().split("\n")
         unique_contributors = len(set(contributors))
