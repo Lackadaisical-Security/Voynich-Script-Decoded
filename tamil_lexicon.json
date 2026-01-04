@@ -1,0 +1,755 @@
+{
+  "metadata": {
+    "title": "Tamil Script Lexicon",
+    "description": "Comprehensive lexicon of the Tamil script with transliteration, definitions and basic morphological details for vowels and consonants.",
+    "version": "1.0.0",
+    "created": "2025-11-18",
+    "total_entries": 31,
+    "corpus_status": "complete",
+    "sources": [
+      "Wikipedia articles on the respective scripts",
+      "Linguistic descriptions and historical sources cited in the report"
+    ],
+    "linguistic_principles": {
+      "script_type": "abugida",
+      "vowel_length_distinction": true,
+      "inherent_vowel": "a",
+      "consonant_classes": [
+        "velar",
+        "palatal",
+        "retroflex",
+        "dental",
+        "labial",
+        "semivowel",
+        "fricative"
+      ]
+    },
+    "script_type": "abugida",
+    "historical_significance": "The Tamil script traces its origins to the Brahmi family of scripts. It has undergone centuries of evolution, adapting to local phonological requirements and influencing literary and cultural expression among speakers of the language."
+  },
+  "entries": [
+    {
+      "entry_id": "tam_vowel_01",
+      "script_symbol": "அ",
+      "transliteration": "a",
+      "translation": "Tamil vowel representing the sound /a/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "short"
+      },
+      "definitions": [
+        "The Tamil letter 'அ' represents the vowel sound /a/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_02",
+      "script_symbol": "ஆ",
+      "transliteration": "ā",
+      "translation": "Tamil vowel representing the sound /ā/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "long"
+      },
+      "definitions": [
+        "The Tamil letter 'ஆ' represents the vowel sound /ā/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_03",
+      "script_symbol": "இ",
+      "transliteration": "i",
+      "translation": "Tamil vowel representing the sound /i/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "short"
+      },
+      "definitions": [
+        "The Tamil letter 'இ' represents the vowel sound /i/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_04",
+      "script_symbol": "ஈ",
+      "transliteration": "ī",
+      "translation": "Tamil vowel representing the sound /ī/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "long"
+      },
+      "definitions": [
+        "The Tamil letter 'ஈ' represents the vowel sound /ī/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_05",
+      "script_symbol": "உ",
+      "transliteration": "u",
+      "translation": "Tamil vowel representing the sound /u/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "short"
+      },
+      "definitions": [
+        "The Tamil letter 'உ' represents the vowel sound /u/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_06",
+      "script_symbol": "ஊ",
+      "transliteration": "ū",
+      "translation": "Tamil vowel representing the sound /ū/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "long"
+      },
+      "definitions": [
+        "The Tamil letter 'ஊ' represents the vowel sound /ū/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_07",
+      "script_symbol": "எ",
+      "transliteration": "e",
+      "translation": "Tamil vowel representing the sound /e/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "short"
+      },
+      "definitions": [
+        "The Tamil letter 'எ' represents the vowel sound /e/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_08",
+      "script_symbol": "ஏ",
+      "transliteration": "ē",
+      "translation": "Tamil vowel representing the sound /ē/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "long"
+      },
+      "definitions": [
+        "The Tamil letter 'ஏ' represents the vowel sound /ē/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_09",
+      "script_symbol": "ஐ",
+      "transliteration": "ai",
+      "translation": "Tamil vowel representing the sound /ai/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "diphthong"
+      },
+      "definitions": [
+        "The Tamil letter 'ஐ' represents the vowel sound /ai/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_10",
+      "script_symbol": "ஒ",
+      "transliteration": "o",
+      "translation": "Tamil vowel representing the sound /o/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "short"
+      },
+      "definitions": [
+        "The Tamil letter 'ஒ' represents the vowel sound /o/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_11",
+      "script_symbol": "ஓ",
+      "transliteration": "ō",
+      "translation": "Tamil vowel representing the sound /ō/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "long"
+      },
+      "definitions": [
+        "The Tamil letter 'ஓ' represents the vowel sound /ō/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_vowel_12",
+      "script_symbol": "ஔ",
+      "transliteration": "au",
+      "translation": "Tamil vowel representing the sound /au/",
+      "pos": "vowel letter",
+      "morphology": {
+        "type": "vowel",
+        "length": "diphthong"
+      },
+      "definitions": [
+        "The Tamil letter 'ஔ' represents the vowel sound /au/."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Derived from Tamil‑Brahmi and ultimately Brahmi script; part of the Dravidian abugida system.",
+      "attestations": [
+        "Early Tamil inscriptions and classical literature",
+        "Modern Tamil writing"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.95
+    },
+    {
+      "entry_id": "tam_cons_01",
+      "script_symbol": "க்",
+      "transliteration": "k",
+      "translation": "Tamil consonant representing the sound /k/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "velar",
+        "manner_of_articulation": "plosive",
+        "voicing": "voiceless"
+      },
+      "definitions": [
+        "The Tamil consonant 'க்' represents the consonant sound /k/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_02",
+      "script_symbol": "ங்",
+      "transliteration": "ṅ",
+      "translation": "Tamil consonant representing the sound /ṅ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "velar",
+        "manner_of_articulation": "nasal",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ங்' represents the consonant sound /ṅ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_03",
+      "script_symbol": "ச்",
+      "transliteration": "c",
+      "translation": "Tamil consonant representing the sound /c/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "palatal",
+        "manner_of_articulation": "affricate",
+        "voicing": "voiceless"
+      },
+      "definitions": [
+        "The Tamil consonant 'ச்' represents the consonant sound /c/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_04",
+      "script_symbol": "ஞ்",
+      "transliteration": "ñ",
+      "translation": "Tamil consonant representing the sound /ñ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "palatal",
+        "manner_of_articulation": "nasal",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ஞ்' represents the consonant sound /ñ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_05",
+      "script_symbol": "ட்",
+      "transliteration": "ṭ",
+      "translation": "Tamil consonant representing the sound /ṭ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "retroflex",
+        "manner_of_articulation": "plosive",
+        "voicing": "voiceless"
+      },
+      "definitions": [
+        "The Tamil consonant 'ட்' represents the consonant sound /ṭ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_06",
+      "script_symbol": "ண்",
+      "transliteration": "ṇ",
+      "translation": "Tamil consonant representing the sound /ṇ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "retroflex",
+        "manner_of_articulation": "nasal",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ண்' represents the consonant sound /ṇ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_07",
+      "script_symbol": "த்",
+      "transliteration": "t",
+      "translation": "Tamil consonant representing the sound /t/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "dental",
+        "manner_of_articulation": "plosive",
+        "voicing": "voiceless"
+      },
+      "definitions": [
+        "The Tamil consonant 'த்' represents the consonant sound /t/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_08",
+      "script_symbol": "ந்",
+      "transliteration": "n",
+      "translation": "Tamil consonant representing the sound /n/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "dental",
+        "manner_of_articulation": "nasal",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ந்' represents the consonant sound /n/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_09",
+      "script_symbol": "ப்",
+      "transliteration": "p",
+      "translation": "Tamil consonant representing the sound /p/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "labial",
+        "manner_of_articulation": "plosive",
+        "voicing": "voiceless"
+      },
+      "definitions": [
+        "The Tamil consonant 'ப்' represents the consonant sound /p/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_10",
+      "script_symbol": "ம்",
+      "transliteration": "m",
+      "translation": "Tamil consonant representing the sound /m/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "labial",
+        "manner_of_articulation": "nasal",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ம்' represents the consonant sound /m/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_11",
+      "script_symbol": "ய்",
+      "transliteration": "y",
+      "translation": "Tamil consonant representing the sound /y/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "palatal",
+        "manner_of_articulation": "approximant",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ய்' represents the consonant sound /y/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_12",
+      "script_symbol": "ர்",
+      "transliteration": "r",
+      "translation": "Tamil consonant representing the sound /r/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "alveolar",
+        "manner_of_articulation": "trill",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ர்' represents the consonant sound /r/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_13",
+      "script_symbol": "ல்",
+      "transliteration": "l",
+      "translation": "Tamil consonant representing the sound /l/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "alveolar",
+        "manner_of_articulation": "lateral",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ல்' represents the consonant sound /l/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_14",
+      "script_symbol": "வ்",
+      "transliteration": "v",
+      "translation": "Tamil consonant representing the sound /v/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "labio‑dental",
+        "manner_of_articulation": "approximant",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'வ்' represents the consonant sound /v/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_15",
+      "script_symbol": "ழ்",
+      "transliteration": "ḻ",
+      "translation": "Tamil consonant representing the sound /ḻ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "retroflex",
+        "manner_of_articulation": "approximant",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ழ்' represents the consonant sound /ḻ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_16",
+      "script_symbol": "ள்",
+      "transliteration": "ḷ",
+      "translation": "Tamil consonant representing the sound /ḷ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "retroflex",
+        "manner_of_articulation": "lateral",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ள்' represents the consonant sound /ḷ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_17",
+      "script_symbol": "ற்",
+      "transliteration": "ṟ",
+      "translation": "Tamil consonant representing the sound /ṟ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "alveolar",
+        "manner_of_articulation": "flap",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ற்' represents the consonant sound /ṟ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_cons_18",
+      "script_symbol": "ன்",
+      "transliteration": "ṉ",
+      "translation": "Tamil consonant representing the sound /ṉ/",
+      "pos": "consonant letter",
+      "morphology": {
+        "type": "consonant",
+        "place_of_articulation": "alveolar",
+        "manner_of_articulation": "nasal",
+        "voicing": "voiced"
+      },
+      "definitions": [
+        "The Tamil consonant 'ன்' represents the consonant sound /ṉ/ with an inherent 'a' vowel unless suppressed by a diacritic."
+      ],
+      "semantic_field": "phonetics",
+      "etymology": "Evolved from Brahmi through Tamil‑Brahmi; part of the core consonant set in the modern Tamil abugida.",
+      "attestations": [
+        "Tamil inscriptions and palm‑leaf manuscripts",
+        "Modern Tamil print and digital media"
+      ],
+      "frequency": "common",
+      "confidence_score": 0.9
+    },
+    {
+      "entry_id": "tam_special_01",
+      "script_symbol": "ஃ",
+      "transliteration": "ḵ",
+      "translation": "āytam – special symbol used historically for a voiceless sound and to indicate foreign sounds",
+      "pos": "special sign",
+      "morphology": {
+        "type": "special sign",
+        "usage": "indicates archaic Dravidian sound /ḥ/ and is used in loanwords"
+      },
+      "definitions": [
+        "The āytam (ஃ) is not a consonant or a vowel; historically it represented a voiceless breathy sound and now signals foreign sounds when combined with other letters."
+      ],
+      "semantic_field": "orthography",
+      "etymology": "Preserved from ancient Tamil Brahmi and later repurposed; not used as a standalone phoneme in modern Tamil.",
+      "attestations": [
+        "Classical Tamil grammar texts",
+        "Loanwords in modern Tamil"
+      ],
+      "frequency": "rare",
+      "confidence_score": 0.85
+    }
+  ],
+  "cultural_context": {
+    "usage": "The Tamil script is used to write the tamil language and, in many cases, other regional languages. It appears in literature, religious texts, education, signage and digital media.",
+    "aesthetics": "Like other Brahmic scripts, letters are rounded and flowing, with complex diacritics attached to consonants. Traditional calligraphy and modern typography both celebrate the beauty of the script.",
+    "modern_status": "Today the script is taught in schools, supported by Unicode and used widely on the internet, ensuring its continued vitality."
+  }
+}
