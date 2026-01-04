@@ -1,5 +1,18 @@
 # 📜 Voynich Manuscript Decipherment Research
 
+## Repository Statistics
+
+![GitHub stars](https://img.shields.io/github/stars/Lackadaisical-Security/Voynich-Script-Decoded?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/Lackadaisical-Security/Voynich-Script-Decoded?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/Lackadaisical-Security/Voynich-Script-Decoded?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/Lackadaisical-Security/Voynich-Script-Decoded?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/Lackadaisical-Security/Voynich-Script-Decoded?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Lackadaisical-Security/Voynich-Script-Decoded?style=flat-square)
+
+📊 **[View Detailed Real-Time Statistics](REALTIME_STATS.md)** | Updated automatically every 6 hours
+
+---
+
 ## Project Overview
 
 This repository preserves the complete research logs, linguistic fieldwork, and methodological insights behind the **Lackadaisical Security Voynich Manuscript Decipherment Project** – a groundbreaking cryptographic and linguistic achievement representing the first complete decipherment of the 600-year-old Voynich Manuscript.
