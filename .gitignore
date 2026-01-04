@@ -1,0 +1,34 @@
+# Generated statistics files (should be regenerated on each run)
+FILE_CHECKSUMS.json
+FILE_CHECKSUMS.md
+GIT_ACTIVITY_LOG.json
+REALTIME_STATS.json
+REALTIME_STATS.md
+STATS_HISTORY.json
+stats_tracker.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
