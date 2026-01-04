@@ -10,7 +10,7 @@ Contact: https://lackadaisical-security.com/decipherment-drops.html
 import subprocess
 import json
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 from pathlib import Path
 import urllib.request
 import urllib.error
@@ -100,7 +100,7 @@ class RepoStatsTracker:
                 "last_commit_message": last_commit_msg,
                 "current_branch": current_branch,
                 "tracked_files": file_count,
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%S.%fZ')
             }
         except Exception as e:
             print(f"⚠️  Error getting local git stats: {e}")
@@ -152,7 +152,7 @@ class RepoStatsTracker:
         print("🔍 Collecting repository statistics...\n")
         
         stats = {
-            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "timestamp": datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
             "local": self.get_local_git_stats(),
             "github": self.get_github_stats()
         }

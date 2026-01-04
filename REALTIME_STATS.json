@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-04T23:06:02.761107Z",
+  "local": {
+    "commit_count": 4,
+    "unique_contributors": 2,
+    "last_commit_date": "2026-01-04 23:04:23 +0000",
+    "last_commit_message": "Remove stats files from .gitignore to enable auto-tracking workflow",
+    "current_branch": "copilot/fix-auto-tracking-issues",
+    "tracked_files": 63,
+    "timestamp": "2026-01-04T23:06:02.771988Z"
+  },
+  "github": {}
+}

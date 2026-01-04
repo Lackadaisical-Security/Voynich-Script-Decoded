@@ -1,10 +1,7 @@
-# Generated statistics files (should be regenerated on each run)
+# Generated files that should be local-only
 FILE_CHECKSUMS.json
 FILE_CHECKSUMS.md
 GIT_ACTIVITY_LOG.json
-REALTIME_STATS.json
-REALTIME_STATS.md
-STATS_HISTORY.json
 stats_tracker.log
 
 # Python
