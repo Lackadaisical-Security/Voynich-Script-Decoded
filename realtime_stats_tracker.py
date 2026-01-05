@@ -34,18 +34,41 @@ class RepoStatsTracker:
         
         token = self.get_github_token()
         if token:
-            headers['Authorization'] = f'token {token}'
+            headers['Authorization'] = f'Bearer {token}'
         
         try:
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=10) as response:
                 return json.loads(response.read().decode())
         except urllib.error.HTTPError as e:
+            # Try to get detailed error message from response body
+            error_msg = None
+            try:
+                error_body = e.read().decode()
+                error_data = json.loads(error_body)
+                error_msg = error_data.get('message', '')
+            except Exception:
+                pass
+            
             if e.code == 403:
-                print(f"⚠️  GitHub API rate limit reached. Set GITHUB_TOKEN env var for higher limits.")
+                if error_msg:
+                    print(f"⚠️  GitHub API error (403): {error_msg}")
+                    if 'rate limit' in error_msg.lower():
+                        print(f"💡 Set GITHUB_TOKEN env var for higher rate limits.")
+                    elif 'credentials' in error_msg.lower() or 'token' in error_msg.lower():
+                        print(f"💡 Check that GITHUB_TOKEN has the correct permissions.")
+                else:
+                    print(f"⚠️  GitHub API access denied (403). Set GITHUB_TOKEN env var with proper permissions.")
                 return None
-            print(f"⚠️  GitHub API error {e.code}: {e.reason}")
-            return None
+            elif e.code == 404:
+                print(f"⚠️  GitHub API endpoint not found (404): {endpoint}")
+                return None
+            else:
+                if error_msg:
+                    print(f"⚠️  GitHub API error {e.code}: {error_msg}")
+                else:
+                    print(f"⚠️  GitHub API error {e.code}: {e.reason}")
+                return None
         except Exception as e:
             print(f"⚠️  Error fetching from GitHub API: {e}")
             return None
@@ -151,11 +174,27 @@ class RepoStatsTracker:
         """Collect all statistics"""
         print("🔍 Collecting repository statistics...\n")
         
+        # Try to load previous stats for fallback
+        previous_github_stats = {}
+        if self.stats_file.exists():
+            try:
+                with open(self.stats_file, 'r') as f:
+                    previous_data = json.load(f)
+                    previous_github_stats = previous_data.get('github', {})
+            except Exception:
+                pass
+        
         stats = {
             "timestamp": datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
             "local": self.get_local_git_stats(),
             "github": self.get_github_stats()
         }
+        
+        # If GitHub stats are empty but we have previous stats, preserve them
+        if not stats["github"] and previous_github_stats:
+            print("ℹ️  Using cached GitHub stats from previous successful fetch")
+            stats["github"] = previous_github_stats
+            stats["github_cached"] = True
         
         return stats
     
@@ -226,6 +265,8 @@ class RepoStatsTracker:
         # GitHub stats
         if stats.get("github"):
             print("\n🌐 GITHUB STATISTICS:")
+            if stats.get("github_cached"):
+                print("   ℹ️  (Using cached data from previous successful fetch)")
             print("-" * 80)
             gh = stats["github"]
             print(f"  ⭐ Stars:          {gh.get('stars', 'N/A')}")
@@ -251,7 +292,12 @@ class RepoStatsTracker:
         md = f"""# Repository Statistics - Real-Time
 
 **Last Updated:** {stats['timestamp']}
-
+"""
+        
+        if stats.get("github_cached"):
+            md += "\n> ℹ️ **Note:** GitHub metrics below are cached from previous successful fetch (current API call failed)\n"
+        
+        md += """
 ## 📊 Current Statistics
 
 """
