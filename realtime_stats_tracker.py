@@ -174,11 +174,27 @@ class RepoStatsTracker:
         """Collect all statistics"""
         print("🔍 Collecting repository statistics...\n")
         
+        # Try to load previous stats for fallback
+        previous_github_stats = {}
+        if self.stats_file.exists():
+            try:
+                with open(self.stats_file, 'r') as f:
+                    previous_data = json.load(f)
+                    previous_github_stats = previous_data.get('github', {})
+            except:
+                pass
+        
         stats = {
             "timestamp": datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
             "local": self.get_local_git_stats(),
             "github": self.get_github_stats()
         }
+        
+        # If GitHub stats are empty but we have previous stats, preserve them
+        if not stats["github"] and previous_github_stats:
+            print("ℹ️  Using cached GitHub stats from previous successful fetch")
+            stats["github"] = previous_github_stats
+            stats["github_cached"] = True
         
         return stats
     
@@ -249,6 +265,8 @@ class RepoStatsTracker:
         # GitHub stats
         if stats.get("github"):
             print("\n🌐 GITHUB STATISTICS:")
+            if stats.get("github_cached"):
+                print("   ℹ️  (Using cached data from previous successful fetch)")
             print("-" * 80)
             gh = stats["github"]
             print(f"  ⭐ Stars:          {gh.get('stars', 'N/A')}")
@@ -274,7 +292,12 @@ class RepoStatsTracker:
         md = f"""# Repository Statistics - Real-Time
 
 **Last Updated:** {stats['timestamp']}
-
+"""
+        
+        if stats.get("github_cached"):
+            md += "\n> ℹ️ **Note:** GitHub metrics below are cached from previous successful fetch (current API call failed)\n"
+        
+        md += """
 ## 📊 Current Statistics
 
 """
