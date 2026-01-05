@@ -34,18 +34,41 @@ class RepoStatsTracker:
         
         token = self.get_github_token()
         if token:
-            headers['Authorization'] = f'token {token}'
+            headers['Authorization'] = f'Bearer {token}'
         
         try:
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=10) as response:
                 return json.loads(response.read().decode())
         except urllib.error.HTTPError as e:
+            # Try to get detailed error message from response body
+            error_msg = None
+            try:
+                error_body = e.read().decode()
+                error_data = json.loads(error_body)
+                error_msg = error_data.get('message', '')
+            except:
+                pass
+            
             if e.code == 403:
-                print(f"⚠️  GitHub API rate limit reached. Set GITHUB_TOKEN env var for higher limits.")
+                if error_msg:
+                    print(f"⚠️  GitHub API error (403): {error_msg}")
+                    if 'rate limit' in error_msg.lower():
+                        print(f"💡 Set GITHUB_TOKEN env var for higher rate limits.")
+                    elif 'credentials' in error_msg.lower() or 'token' in error_msg.lower():
+                        print(f"💡 Check that GITHUB_TOKEN has the correct permissions.")
+                else:
+                    print(f"⚠️  GitHub API access denied (403). Set GITHUB_TOKEN env var with proper permissions.")
                 return None
-            print(f"⚠️  GitHub API error {e.code}: {e.reason}")
-            return None
+            elif e.code == 404:
+                print(f"⚠️  GitHub API endpoint not found (404): {endpoint}")
+                return None
+            else:
+                if error_msg:
+                    print(f"⚠️  GitHub API error {e.code}: {error_msg}")
+                else:
+                    print(f"⚠️  GitHub API error {e.code}: {e.reason}")
+                return None
         except Exception as e:
             print(f"⚠️  Error fetching from GitHub API: {e}")
             return None
