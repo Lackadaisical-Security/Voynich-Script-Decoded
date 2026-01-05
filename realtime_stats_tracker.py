@@ -47,7 +47,7 @@ class RepoStatsTracker:
                 error_body = e.read().decode()
                 error_data = json.loads(error_body)
                 error_msg = error_data.get('message', '')
-            except:
+            except Exception:
                 pass
             
             if e.code == 403:
@@ -181,7 +181,7 @@ class RepoStatsTracker:
                 with open(self.stats_file, 'r') as f:
                     previous_data = json.load(f)
                     previous_github_stats = previous_data.get('github', {})
-            except:
+            except Exception:
                 pass
         
         stats = {
