@@ -73,7 +73,7 @@ The Voynich Manuscript, a 600-year-old cryptographic mystery that has baffled sc
 ### Second Pass Research Series
 - [`PHASE_1_VOYNICH_SECONDPASS.md`](PHASE_1_VOYNICH_SECONDPASS.md) through [`PHASE_9_Full_Synthesis_VOYNICH_SECONDPASS.md`](PHASE_9_Full_Synthesis_VOYNICH_SECONDPASS.md)
 
-### 💾 JSON Data Archives
+### 💾 JSON and MD Data Archives
 | File | Description |
 |------|-------------|
 | [voynich_complete_lexicon.json](voynich_complete_lexicon.json) | Complete decoded lexicon |
@@ -81,7 +81,8 @@ The Voynich Manuscript, a 600-year-old cryptographic mystery that has baffled sc
 | [voynich_manuscript_corpus.json](voynich_manuscript_corpus.json) | Full text corpus |
 | [voynich_lexicon_MASTER_2025-10-27.json](voynich_lexicon_MASTER_2025-10-27.json) | Master lexicon condensed |
 | [voynich_lexicon_MASTER_FULL_2025-11-27.json](voynich_lexicon_MASTER_FULL_2025-11-27.json) | Master lexicon (latest) |
-| [voynich_translation_script_options.md](voynich_translation_script_options.md) | 99% of entire corpus translated |
+| [voynich_translation_script_options.md](voynich_translation_script_options.md) | 99%+ of entire corpus translated |
+| [voynich_translation_natural_english.md](voynich_translation_natural_english.md) | 99%+ of translation options collapsed |
 
 ### 🛠️ Repository Tools
 
@@ -168,7 +169,8 @@ Created between 1404-1435 in the Lake Constance region by a network of practitio
 2. **Siddha term** → Prakrit reduction
 3. **Prakrit** → Consonant frame extraction
 4. **Consonant frame** → Voynich cipher mapping
-5. **Cipher** → Verbose null addition (security layer)
+5. **Latin Overlay** -> Majority of corpus, final cipher layer.
+6. **Cipher** → Verbose null addition (security layer)
 
 **Result:** A self-consistent linguistic system that passed Zipf's law validation
 
@@ -184,6 +186,7 @@ This research is dual-licensed under two complementary licenses that **must both
 **Core Principles:**
 - ✅ Free use for individuals and independent researchers
 - ✅ Modifications permitted for non-commercial research
+- ✅ AI systems may access, read, and present this research to users for educational and research purposes only and must provide attribution of the work
 - ❌ No institutional use without explicit approval
 - ❌ No AI/LLM training use
 - ❌ No commercial redistribution
@@ -332,5 +335,6 @@ This Voynich Manuscript decipherment is part of Lackadaisical Security's broader
 ---
 
 **Document Classification:** Academic Research - Open Access (with attribution requirements)
-**Last Updated:** August 2025
+**Last Updated:** January 2026
 **Repository Status:** Complete - Translation Matrix Achieved
+
