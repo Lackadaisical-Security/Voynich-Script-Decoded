@@ -20,7 +20,7 @@
 ### Cross-Validation Sources
 - **Latin Lexicon:** 30,859 entries
 - **Tamil Lexicon:** 31 entries
-- **Sanskrit Pre-forms:** 22 entries
+- **Pre-forms:** 22 entries
 
 ---
 
